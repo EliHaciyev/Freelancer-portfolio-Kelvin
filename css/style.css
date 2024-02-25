@@ -1,0 +1,204 @@
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Header Start */
+.header {
+  background: #f1f1f1;
+  padding-top: 46px;
+}
+.header-nav {
+  margin-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  position: relative;
+  padding: 0 12px 3px 0;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(253, 163, 0);
+
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+}
+.nav-link__active {
+  color: rgb(96, 96, 96);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.header-content {
+  margin-top: 124px;
+  max-width: 500px;
+}
+.header-content p {
+
+  line-height: 2;
+}
+
+.header-heading {
+  padding-bottom: 20px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+/* Header End */
+
+.service {
+  padding: 90px 0;
+}
+
+.service-row {
+  display: flex;
+  column-gap: 30px;
+}
+
+.service-cad-img {
+  margin-bottom: 30px;
+
+}
+
+.service-cad-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.service-cad p {
+  line-height: 2;
+}
+
+.portfolio {
+  background:rgb(241, 241, 241);
+  padding: 90px 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.title-1 {
+  color: rgb(7, 7, 7);
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+}
+
+.project {
+  text-align: center;
+}
+.project + .project {
+  margin-top: 90px;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+.project-title {
+  font-size: 18px;
+  line-height: 27px;
+}
+.project-title a{
+  color: rgb(7, 7, 7);
+  text-decoration: underline;
+}
+
+.contacts {
+  padding: 90px 0;
+    text-align: center;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+
+
+.contacts-content {
+  margin: 0 auto 40px;
+  max-width: 480px;
+  color: rgb(7, 7, 7);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contacts-content p + p {
+  margin-top: 1em;
+}
+
+.contacts-button {
+  margin-bottom: 80px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 22px;
+  background: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color .3s ease-in, top .2s ease-in;
+}
+.btn:hover, .btn:focus{
+  background-color: #323232;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+  background-color: black;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  margin-bottom: 40px;
+}
+
+.contacts-footer {
+  color: rgb(130, 130, 130);
+}
