@@ -6,6 +6,7 @@
   <title>Freelancer-Portfolio</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <div class="container">
       <div class="header-nav">
         <a href="#!" class="logo">Kelvin</a>
-        <nav class="nav">
+        <nav id="nav" class="nav">
           <ul class="nav-list">
             <li class=""><a class="nav-link nav-link__active" href="#!">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">Works</a></li>
@@ -22,20 +23,26 @@
             <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
           </ul>
+          <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="./img/icon/nav-open.svg">
+          </button>
         </nav>
       </div>
       <div class="header-row">
-        <div class="header-content">
+        <div class="header-content"  data-aos="fade-up">
           <h1 class="header-heading">
             Ali Hajiyev <br>
-            Designer & Developer
+            <span>Designer & Developer</span>
           </h1>
           <p>
             I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
           </p>
         </div>
-        <div class="header-img">
+        <div class="header-img"  data-aos="fade-left">
+          <picture>
+          <source media="(max-width: 799px)" srcset="./img/header/hero2.png">
           <img src="./img/header/hero.png" alt="hero">
+          </picture>
         </div>
       </div>
     </div>
@@ -48,21 +55,21 @@
     <section class="service">
       <div class="container">
         <div class="service-row">
-          <div class="service-cad">
+          <div class="service-cad" data-aos="fade-down">
             <img class="service-cad-img" src="./img/services/graphic1.svg" alt="UI/UX Design">
               <h3 class="service-cad-title">UI/UX Design</h3>
             <p>
               Our design is translated into comprehensive digital environments built on latest development standards.
             </p>
           </div>
-           <div class="service-cad">
+           <div class="service-cad" data-aos="fade-down">
             <img class="service-cad-img" src="./img/services/graphic2.svg" alt="Development">
               <h3 class="service-cad-title">Development</h3>
             <p>
              Our design is translated into comprehensive digital environments built on latest development standards.
             </p>
           </div>
-           <div class="service-cad">
+           <div class="service-cad" data-aos="fade-down">
             <img class="service-cad-img" src="./img/services/graphic3.svg" alt="Software testing">
               <h3 class="service-cad-title">Software Testing</h3>
             <p>
@@ -80,19 +87,19 @@
       <div class="container">
         <div class="portfolio-title">
           <h2 class="title-1">Portfolio</h2>
-          <div class="project">
+          <div class="project"  data-aos="flip-up">
             <img class="project-img" src="./img/portfolio/pf1.jpg" alt="project">
             <h3 class="project-title">
               <a href="#!">Online fashion store - Homepage</a>
             </h3>
           </div>
-          <div class="project">
+          <div class="project"  data-aos="flip-up">
             <img class="project-img" src="./img/portfolio/pf2.jpg" alt="project">
             <h3 class="project-title">
               <a href="#!">Reebok Store - Concept</a>
             </h3>
           </div>
-          <div class="project">
+          <div class="project"  data-aos="flip-up">
             <img class="project-img" src="./img/portfolio/pf3.jpg" alt="project">
             <h3 class="project-title">
               <a href="#!">Braun Landing Page - Concept</a>
@@ -102,7 +109,6 @@
           </div>
     </section>
 
-
   <!-- Section Portfolio End -->
   </main>
   <!-- Section Footer  Start -->
@@ -111,15 +117,15 @@
       <div class="contacts-title">
         <h2 class="title-1">Contacts</h2>
       </div>
-      <div class="contacts-content">
+      <div class="contacts-content"  data-aos="fade-down">
         <p>
                 Want to know more or just chat? <br> You are welcome!
         </p>
       </div>
-      <div class="contacts-button">
+      <div class="contacts-button"  data-aos="fade-down">
         <a href="#!" class="btn">Send message</a>
       </div>
-      <div class="contacts-social">
+      <div class="contacts-social"  data-aos="zoom-in">
         <a href="#!">
           <img src="./img/socials/LinkedIn.svg" alt="LinkedIn">
         </a>
@@ -133,28 +139,15 @@
           <img src="./img/socials/Dribble.svg" alt="Dribble">
         </a>
       </div>
-      <div class="contacts-footer">
+      <div class="contacts-footer" data-aos="fade-up">
         <p>
                   Like me on <br>LinkedIn, Instagram, Behance, Dribble
         </p>
       </div>
     </div>
   </footer>
-
-
   <!-- Section Footer  End -->
-
-
-
-  
-
-  <!-- Main Section End -->
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  <script src="./js/app.js"></script>
 </body>
 </html>
